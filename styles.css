@@ -87,12 +87,17 @@ th {
     font-weight: bold;
     color: #808C81;
     padding-bottom: 20px;
-    font-family: cursive;
+    font-family: sans-serif !important;
 }
 .avtar {
     float: left;
     margin-right: 1rem;
     border: 1px solid lightgray;
+}
+.post-date{
+    font-size: 14px;
+    font-weight: 500;
+    color: #808C81;
 }
 .like-comment-share {
     font-size: 14px;
@@ -100,6 +105,7 @@ th {
     color: #808C81;
 }
 .post-link {
+    font-size: 18px;
     margin-top: 1rem !important;
     margin-bottom: 0 !important;
 }
@@ -211,6 +217,8 @@ th {
 
 .like-comment-share-actions{
     color: #778899  !important;
+    cursor: pointer;
+    
 }
 .responded{
     color: #34b6e2   !important;

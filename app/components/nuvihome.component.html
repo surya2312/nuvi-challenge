@@ -43,13 +43,14 @@
 <div class="col-md-6 posts-content">
   <p-dataTable [value]="userActivities"
   [paginator]="true" [rows]="4" [responsive]="true">
-  <header>User Posts</header>
+  <header><strong>USER POSTS</strong></header>
   <p-column field="actor_name" [sortable]="true">
     <template let-userActivity="rowData" pTemplate type="body">
       <div>
-        <img  class="avtar" src="{{userActivity.actor_avator}}" alt="" width="55" height="55">
-        <p><strong><a href="{{userActivity.actor_url}}">{{userActivity.actor_name}}</a></strong><br>
-          {{userActivity.actor_description}} 
+        <img  class="avtar" src="{{userActivity.actor_avator}}" alt="" width="65" height="65">
+        <p><strong><a href="{{userActivity.actor_url}}">{{userActivity.actor_name}}</a></strong><br/>
+          {{userActivity.actor_description}} <br/>
+          <span class="post-date">{{userActivity.activity_date | date: 'dd/MM/yyyy'}}</span>
         </p>
       </div>
       <p class="post-link"><a href="{{userActivity.activity_url}}">see post on <i class="fa fa-{{userActivity.provider}}"></i> </a></p>

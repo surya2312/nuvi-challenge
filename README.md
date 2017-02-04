@@ -13,6 +13,11 @@ User Interactions:
 2. Pagination availabe to navigate all the posts
 3. See the post on its own provider site
 
+```bash
+![alt tag](https://github.com/surya2312/nuvi-challenge/blob/master/Screenshot.jpg)
+
+```
+
 ## Prerequisites
 
 Node.js and npm are essential to Angular development.   
