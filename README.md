@@ -8,6 +8,11 @@ The data is fetched from restful service https://nuvi-challenge.herokuapp.com/ac
 My choice of javascript framework is Angular2 with Typescript.
 I have also used PrimeNG to show datatable and Pie chart, to easily visualize the data.
 
+User Interactions:
+1. like-comment-share a post
+2. Pagination availabe to navigate all the posts
+3. See the post on its own provider site
+
 ## Prerequisites
 
 Node.js and npm are essential to Angular development.   
