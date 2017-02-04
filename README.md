@@ -14,7 +14,7 @@ User Interactions:
 3. See the post on its own provider site
 
 <p align="center">
-  <img src="https://github.com/surya2312/nuvi-challenge/blob/master/Screenshot.jpg" width="350"/>
+  <img src="https://github.com/surya2312/nuvi-challenge/blob/master/Screenshot.jpg"/>
 </p>
 
 ## Prerequisites
