@@ -1,0 +1,86 @@
+<div class="nuvi-header">
+  Nuvi
+  <span> User Activities Dashboard </span>
+</div>
+<div class="main-div">
+<div class="row">
+<div class="col-md-6 summary-div">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 total-records">
+        <span>Total User Activities {{totalRecords}} </span>
+      </div>
+    </div>
+    <div class="break"></div>
+    <div class="row">
+      <div class="col-md-4 cliente">
+        <span class="count" [innerHTML]="totalLikes"></span><br/>
+        <span class="count-type"> Likes </span>
+      </div>
+      <div class="col-md-4 cliente">
+        <span class="count" [innerHTML]="totalShares"></span><br/>
+        <span class="count-type"> Shares </span>
+      </div>
+      <div class="col-md-4 cliente">
+        <span class="count" [innerHTML]="totalComments"></span><br/>
+        <span class="count-type"> Comments </span>
+      </div>
+    </div>
+    <div class="row provider-summary">
+      <div class="col-md-3 provider-count" *ngFor="let provider of providers" >
+        <span><img src="../app/images/{{provider}}.png" width="100" height="30"></span><br/>
+        <span>{{postsByProviders[provider]}} posts</span>
+      </div>
+    </div>
+    <div class="row" class="pie-summary">
+      <canvas baseChart responsive
+      [data]="pieChartData"
+      [labels]="pieChartLabels"
+      [chartType]="pieChartType"></canvas> 
+    </div>
+  </div>
+</div>
+<div class="col-md-6 posts-content">
+  <p-dataTable [value]="userActivities"
+  [paginator]="true" [rows]="4" [responsive]="true">
+  <header>User Posts</header>
+  <p-column field="actor_name" [sortable]="true">
+    <template let-userActivity="rowData" pTemplate type="body">
+      <div>
+        <img  class="avtar" src="{{userActivity.actor_avator}}" alt="" width="55" height="55">
+        <p><strong><a href="{{userActivity.actor_url}}">{{userActivity.actor_name}}</a></strong><br>
+          {{userActivity.actor_description}} 
+        </p>
+      </div>
+      <p class="post-link"><a href="{{userActivity.activity_url}}">see post on <i class="fa fa-{{userActivity.provider}}"></i> </a></p>
+      <div>
+        <span class="like-comment-share">{{userActivity.activity_likes}} likes &#9679; 
+        {{userActivity.activity_comments}} comments &#9679;
+        {{userActivity.activity_shares}} shares
+        </span><br/>
+        <span class="like-comment-share-actions">
+        <i class="fa fa-thumbs-up" 
+        *ngIf="!userActivity.liked"
+        [ngClass]="userActivity.liked ? 'responded' : ''" 
+        (click)="likeActivity(userActivity.id)">like</i>
+        <span class="responded" *ngIf="userActivity.liked"> liked </span>
+        &#9679;
+        <i class="fa fa-comment" 
+        *ngIf="!userActivity.commented"
+        [ngClass]="userActivity.commented ? 'responded' : ''" 
+        (click)="commentActivity(userActivity.id)">comment</i> 
+        <span class="responded" *ngIf="userActivity.commented"> commented </span>
+        &#9679; 
+        <i class="fa fa-share" 
+        *ngIf="!userActivity.shared"
+        [ngClass]="userActivity.shared ? 'responded' : ''" 
+        (click)="shareActivity(userActivity.id)">share</i> 
+        <span class="responded" *ngIf="userActivity.shared"> shared </span>
+        </span>
+      </div>
+    </template>
+  </p-column>
+  </p-dataTable>
+</div>
+<div></div>
+<p-growl [value]="msgs"></p-growl>

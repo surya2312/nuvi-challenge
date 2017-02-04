@@ -1,0 +1,222 @@
+.nuvi-header {
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #34b6e2;
+}
+
+.nuvi-header span{
+    font-size: 18px;
+    color: white;
+}
+
+.break{
+    border-bottom: groove #D5D5D5 3px;
+    margin-right: 5%;
+    margin-left: 5%;
+}.nuvi-header {
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #34b6e2;
+}
+.nuvi-header span {
+    font-size: 18px;
+    color: white;
+}
+.break {
+    border-bottom: groove #D5D5D5 3px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.cliente {
+    text-align: center;
+    margin-top: 5px;
+}
+.provider-summary {
+    margin: 25px 20px 20px 20px !important;
+}
+.provider-count {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+.count {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 34px;
+    font-weight: bold;
+    color: #0B5172;
+}
+.count-type {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #5F6466;
+}
+.total-posts {
+    text-align: center;
+    font-size: 48px;
+}
+.total-activities {
+    text-align: center;
+    font-size: 34px;
+}
+.summary-div {
+    margin-top: 1%;
+    border-right: groove #D5D5D5 2px;
+}
+.posts-content {
+    margin-top: 1%;
+    overflow: auto;
+}
+.user-post {
+    display: inline;
+}
+th {
+    display: none !important;
+}
+.main-div {
+    margin-right: 2%;
+}
+.total-records {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    color: #808C81;
+    padding-bottom: 20px;
+    font-family: cursive;
+}
+.avtar {
+    float: left;
+    margin-right: 1rem;
+    border: 1px solid lightgray;
+}
+.like-comment-share {
+    font-size: 14px;
+    font-weight: 500;
+    color: #808C81;
+}
+.post-link {
+    margin-top: 1rem !important;
+    margin-bottom: 0 !important;
+}
+.post-link a {
+    color: #34b6e2 !important;
+}
+.like-comment-share-actions {
+    color: #778899 !important;
+}
+.responded {
+    color: #34b6e2 !important;
+}
+.pie-summary {
+    width: 350px !important;
+    height: 350px !important;
+    margin-left: 20%
+}
+
+.cliente {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.provider-summary {
+    margin: 25px 20px 20px 20px !important;
+}
+
+
+.provider-count {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*background-color: #3B5998;*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*color: white;*/
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.count {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 34px;
+    font-weight: bold;
+    color: #0B5172;
+}
+.count-type {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #5F6466;
+}
+.total-posts {
+    text-align: center;
+    font-size: 48px;
+}
+.total-activities {
+    text-align: center;
+    font-size: 34px;
+}
+
+.summary-div {
+    margin-top: 1%;
+    border-right:groove #D5D5D5 2px;
+}
+.posts-content {
+    margin-top: 1%;
+    overflow: auto;
+}
+
+
+.user-post {
+    display: inline;
+}
+th {
+    display: none !important;
+}
+
+.main-div{
+    margin-right: 2%;
+}
+
+.total-records{
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    color: #808C81;
+    padding-bottom: 20px;
+    font-family: cursive;
+}
+
+.avtar{
+    float: left;
+    margin-right:1rem;
+    border: 1px solid lightgray;
+}
+
+.like-comment-share{
+    font-size: 14px;
+    font-weight: 500;
+    color: #808C81;
+}
+.post-link{
+    
+    margin-top: 1rem !important;
+    margin-bottom: 0 !important;
+}
+.post-link a{
+    color: #34b6e2 !important;
+}
+
+.like-comment-share-actions{
+    color: #778899  !important;
+}
+.responded{
+    color: #34b6e2   !important;
+}
+.pie-summary{
+    width: 350px  !important; 
+    height: 350px !important;
+    margin-left: 20%
+}
